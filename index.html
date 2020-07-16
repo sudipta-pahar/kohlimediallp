@@ -15,7 +15,13 @@
     scroll-behavior: smooth;
   }
   body{
-      background-image: linear-gradient(to right bottom, #aaaeb5, #bfc1c7, #d5d5d9, #eaeaec, #ffffff);
+      background-image: linear-gradient(to right top, #79a1dd, #a4b6e5, #c7cded, #e5e5f6, #ffffff);
+  }
+  a{
+  	  text-decoration: none;
+  }
+  a:hover{
+  	text-decoration: none;
   }
   p{
     font-family: 'Open Sans', sans-serif;
@@ -76,16 +82,21 @@
     transition-duration: 0.2s;
   }
   .button:hover{
-    background-color: red;
+    color: blue;
   }
 
 
   /*slideshow animation*/
 
   * {
-    box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
+    box-sizing: border-box;
+}
+body {
+	font-family: Verdana, sans-serif;
+}
+.mySlides {
+	display: none;
+}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -102,7 +113,7 @@ img {vertical-align: middle;}
   color: #f2f2f2;
   font-size: 1vw;
   padding: 8px;
-  position: absolute;
+  position: relative;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -164,20 +175,21 @@ img {vertical-align: middle;}
   /*dropdown animation*/
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body id="myPage">
 
 
 <div class="w3-top" id="nav" data-aos="fade-up">
   <div class="w3-bar w3-theme-d2 w3-left-align  w3-right" style="width: 100%; padding-right: 10px;" id="nav">
-    <div class="w3-dropdown-hover w3-hide-small  w3-right">
-        <button class="w3-button" title="Notifications" style="margin-left: 5px; background-color: red;">
-          More <i class="fa fa-caret-down"></i>
-        </button>   <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-animate-zoom" style="right: 0">
+    <div class="w3-dropdown-hover w3-hide-small w3-right w3-color-red">
+        <button type="button" class="btn btn-success" style="margin-left: 5px; background-color: red;">More <i class="fa fa-caret-down"></i>
+        </button>  
+        	<div class="w3-dropdown-content w3-card-4 w3-bar-block w3-animate-zoom" style="right: 0">
               <a href="https://kohli.company/KOHLI/products" class="w3-bar-item w3-button w3-hover-red">Products</a>
               <a href="https://kohli.company/KOHLI/about" class="w3-bar-item w3-button w3-hover-red">About </a>
               <a href="https://kohli.company/KOHLI/contact" class="w3-bar-item w3-button w3-hover-red">Contact</a>
-          </div>
+            </div>
       </div>
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-red w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
       <a href="https://kohli.company/KOHLI/" class="w3-bar-item w3-button w3-teal" id="nav"><i class="fa fa-home w3-margin-right"></i>Logo</a>
@@ -402,7 +414,7 @@ img {vertical-align: middle;}
     <div class="w3-third w3-margin-bottom" data-aos="fade-up">
       <ul class="w3-ul w3-border w3-hover-shadow" id="hover-shadow">
         <li class="w3-theme">
-          <p class="w3-xlarge" style="height: 5vh; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%)" >QRON.top</p>
+          <p class="w3-xlarge" style="height: 5vh; top: 50%;" ><strong>QRON.top</strong></p>
         </li>
         <li class="w3-padding-16"><p align="justify" style="height: 30vh">Create your QR Code for free! You can generate free QR codes on this website. A QR code is 2D barcode that stores information in black and white dots. QR is used everyday to provide a link to your payment gateway</p></li>
       </ul>
